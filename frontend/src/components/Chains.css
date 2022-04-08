@@ -113,13 +113,13 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Chains-chain.Chains-chain-selected {
-  color: #393838;
+  color: #252140;
   /*
   Instead of making the font bold, which changes the container width and
   causes some wobbling, apply a tiny text shadow to "bold" it without the
   width change:
   */
-  text-shadow: -0.06ex 0 #393838, 0.06ex 0 #393838;
+  text-shadow: -0.06ex 0 #252140, 0.06ex 0 #252140;
 }
 
 /* Animate the tab background to rise up all the way on selection */
@@ -128,6 +128,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Chains-chain.Chains-chain-selected .Chains-node-count {
-  background: #393838;
+  background: #252140;
   color: #DAD5FB;
 }
