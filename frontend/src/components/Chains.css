@@ -38,7 +38,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 .Chains-chain {
   top: 4px;
   padding: 0 12px;
-  color: #fff;
+  color: #DAD5FB;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75,14 +75,14 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   margin: 0;
   height: 28px;
   width: 28px;
-  color: #fff;
+  color: #DAD5FB;
 }
 
 .Chains-node-count {
   padding: 0px;
   display: inline-block;
   border-radius: 20px;
-  background: #fff;
+  background: #DAD5FB;
   color: #7167E8;
   font-size: 0.9em;
   margin-left: 0.5em;
@@ -129,5 +129,5 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 .Chains-chain.Chains-chain-selected .Chains-node-count {
   background: #393838;
-  color: #fff;
+  color: #DAD5FB;
 }

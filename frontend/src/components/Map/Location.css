@@ -58,7 +58,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Location-synced .Location-ping {
-  border: 1px solid #fff;
+  border: 1px solid #DAD5FB;
   border-radius: 30px;
   display: block;
   animation: ping 1s forwards;
@@ -66,7 +66,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 .Location:hover {
   z-index: 4;
-  border-color: #fff;
+  border-color: #DAD5FB;
 }
 
 .Location-details {
@@ -74,7 +74,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   position: absolute;
   font-family: monospace, sans-serif;
   background: #222;
-  color: #fff;
+  color: #DAD5FB;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-collapse: collapse;
 }

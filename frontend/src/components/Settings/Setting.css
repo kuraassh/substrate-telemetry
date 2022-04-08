@@ -24,7 +24,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 }
 
 .Setting-on {
-  color: #fff;
+  color: #DAD5FB;
 }
 
 .Setting .Icon {
@@ -55,7 +55,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
   position: absolute;
   left: 0;
   top: 0;
-  background: #fff;
+  background: #DAD5FB;
   transition: left 0.15s ease-in-out;
 }
 
