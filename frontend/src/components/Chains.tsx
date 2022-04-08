@@ -21,7 +21,7 @@ import { Types, Maybe } from '../common';
 import { ChainData } from '../state';
 import { viewport } from '../utils';
 
-import githubIcon from '../icons/mark-github.svg';
+import githubIcon from '../icons/logo.svg';
 import listIcon from '../icons/kebab-horizontal.svg';
 import './Chains.css';
 
@@ -90,9 +90,9 @@ export class Chains extends React.Component<Chains.Props, {}> {
         </a>
         <a
           className="Chains-fork-me"
-          href="https://github.com/paritytech/substrate-telemetry"
+          href="https://blog.postcapitalist.io/"
           target="_blank"
-          title="Fork Me!"
+          title="POSTCAPITALIST"
         >
           <Icon src={githubIcon} />
         </a>
