@@ -1,12 +1,25 @@
+(cloudflare-tls) {
+  tls {
+      dns cloudflare {env.CLOUDFLARE_API_KEY}
+  }
+}
+
 telemetry.postcapitalist.io {
-  reverse_proxy 127.0.0.1:3000
+  import cloudflare-tls
+  reverse_proxy 127.0.0.1:3000 {
+    flush_interval -1
+  }
   route {
-    reverse_proxy /feed 127.0.0.1:8000
+    reverse_proxy /feed 127.0.0.1:8000 {
+      flush_interval -1
+    }
     header Connection *Upgrade*
     header Upgrade    websocket
   }
   route {
-    reverse_proxy /submit 127.0.0.1:8001
+    reverse_proxy /submit 127.0.0.1:8001 {
+      flush_interval -1
+    }
     header Connection *Upgrade*
     header Upgrade    websocket
   }
