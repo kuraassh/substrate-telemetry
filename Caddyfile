@@ -1,22 +1,15 @@
 telemetry.postcapitalist.io {
-reverse_proxy 127.0.0.1:3000
-  log {
-    output stdout
-  }
-}
-
-
-wss-telemetry.postcapitalist.io {
-  reverse_proxy 127.0.0.1:8001
-  @websockets {
+  reverse_proxy 127.0.0.1:3000
+  route {
+    reverse_proxy /feed 127.0.0.1:8000
     header Connection *Upgrade*
     header Upgrade    websocket
   }
-
   route {
-    reverse_proxy /feed 127.0.0.1:8000
+    reverse_proxy /submit 127.0.0.1:8001
+    header Connection *Upgrade*
+    header Upgrade    websocket
   }
-
   log {
     output stdout
   }
